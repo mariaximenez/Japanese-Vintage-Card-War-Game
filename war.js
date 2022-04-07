@@ -116,15 +116,99 @@ let heart13 = {
 
 }
 
+let spade1 = {
+    suit: 'spade',
+    value: 1,
+    image: id="spd1"
+};
+let spade2 = {
+    suit: 'spade',
+    value: 2,
+    image: id="spd2"
+};
+let spade3 = {
+    suit: 'spade',
+    value: 3,
+    image: id="spd3"
+};
+let spade4 = {
+    suit: 'spade',
+    value: 4,
+    image: id="spd4"
+};
 
-let currentCards = [heart1.value, heart2.value, heart3.value, heart4.value, heart5.value, heart6.value, heart7.value, heart8.value, heart9.value, heart10.value, heart11.value, heart12.value, heart13.value];
-console.log(currentCards);
+let spade5 = {
+    suit: 'spade',
+    value: 5,
+    image: id="spd5"
+};
+
+let spade6 = {
+    suit: 'spade',
+    value: 6,
+    image: id="spd6"
+};
+
+let spade7 = {
+    suit: 'spade',
+    value: 7,
+    image: id="spd7"
+};
+
+let spade8 = {
+    suit: 'spade',
+    value: 8,
+    image: id="spd8"
+};
+
+let spade9 = {
+    suit: 'spade',
+    value: 9,
+    image: id="spd9"
+};
+
+let spade10 = {
+    suit: 'spade',
+    value: 10,
+    image: id="spd10"
+
+};
+
+let spade11 = {
+    suit: 'spade',
+    value: 11,
+    image: id="spd11"
+
+};
+let spade12 = {
+    suit: 'spade',
+    value: 12,
+    image: id="spd12"
+
+};
+
+let spade13 = {
+    suit: 'spade',
+    value: 13,
+    image: id="spd13"
+
+}
 
 
-// let currentCards [
-//     oppCard, mycard]
-// ]
+console.log(spade1, spade2, spade3, spade4, spade5, spade6, spade7, spade8, spade9, spade10, spade11, spade12, spade13);
 
 
+
+
+let myCards = [heart1.value, heart2.value, heart3.value, heart4.value, heart5.value, heart6.value, heart7.value, heart8.value, heart9.value, heart10.value, heart11.value, heart12.value, heart13.value];
+console.log(myCards);
+
+let opponentCards = [spade1.value, spade2.value, spade3.value, spade4.value, spade5.value, spade6.value, spade7.value, spade8.value, spade9.value, spade10.value, spade11.value, spade12.value, spade13.value];
+console.log(opponentCards);
+
+// function playRound {
+//     for(i=0; i< currentCards.length; i++)
+
+// }
 
 
