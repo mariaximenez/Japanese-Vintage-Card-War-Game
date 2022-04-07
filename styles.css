@@ -20,3 +20,17 @@ float: right;
 display: hidden;
 
 }
+
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 50%;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    margin: auto;
+
+}
+
+
