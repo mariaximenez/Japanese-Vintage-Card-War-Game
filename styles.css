@@ -1,4 +1,22 @@
 h1 {
     color: blue;
     font-size: 70px;
+    text-align: center;
+}
+
+h2 
+{
+    text-align: center;
+
+}
+
+.myCards {
+float: left;
+display: hidden;
+}
+
+.opponentCards {
+float: right;
+display: hidden;
+
 }
