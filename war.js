@@ -195,8 +195,8 @@ let spade13 = {
 }
 
 
-console.log(spade1, spade2, spade3, spade4, spade5, spade6, spade7, spade8, spade9, spade10, spade11, spade12, spade13);
-
+let user = undefined;
+let opponent = undedfined;
 
 
 
@@ -207,7 +207,19 @@ let opponentCards = [spade1.value, spade2.value, spade3.value, spade4.value, spa
 console.log(opponentCards);
 
 // function playRound {
-//     for(i=0; i< currentCards.length; i++)
+//     for(i=0; i< 13; i++) {
+    if (myCards[i] > opponentCards[i] {
+return user + 1;
+return opponent -1;
+console.log(You beat the robot!);
+else if (opponentCards[i]) > myCards[i] {
+    return opponent + 1;
+    return user -1;
+    console.log(The robot beat you!);
+}
+    }
+}
+
 
 // }
 
