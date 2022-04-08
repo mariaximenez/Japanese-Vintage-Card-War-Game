@@ -39,158 +39,128 @@
 let heart1 = {
     suit: 'heart',
     value: 1,
-    image: hrt1.jpg
 };
 let heart2 = {
     suit: 'heart',
     value: 2,
-    image: hrt2.jpg
 };
 let heart3 = {
     suit: 'heart',
     value: 3,
-    image: hrt3.jpg
 };
 let heart4 = {
     suit: 'heart',
     value: 4,
-    image: hrt4.jpg
 };
 
 let heart5 = {
     suit: 'heart',
     value: 5,
-    image: hrt5.jpg
 };
 
 let heart6 = {
     suit: 'heart',
     value: 6,
-    image: hrt6.jpg
 };
 
 let heart7 = {
     suit: 'heart',
     value: 7,
-    image: hrt7.jpg
 };
 
 let heart8 = {
     suit: 'heart',
     value: 8,
-    image: hrt8.jpg
 };
 
 let heart9 = {
     suit: 'heart',
     value: 9,
-    image: hrt9.jpg
 };
 
 let heart10 = {
     suit: 'heart',
     value: 10,
-    image: hrt10.jpg
-
 };
 
 let heart11 = {
     suit: 'heart',
     value: 11,
-    image: hrt11.jpg
-
 };
 let heart12 = {
     suit: 'heart',
     value: 12,
-    image: hrt12.jpg
-
 };
 
 let heart13 = {
     suit: 'heart',
     value: 13,
-    image: hrt13.jpg
-
 }
 
 let spade1 = {
     suit: 'spade',
     value: 1,
-    image: spd1.jpg
 };
 let spade2 = {
     suit: 'spade',
     value: 2,
-    image: spd2.jpg
 };
 let spade3 = {
     suit: 'spade',
     value: 3,
-    image: spd3.jpg
 };
 let spade4 = {
     suit: 'spade',
     value: 4,
-    image: spd4.jpg
 };
 
 let spade5 = {
     suit: 'spade',
     value: 5,
-    image: spd5.jpg
 };
 
 let spade6 = {
     suit: 'spade',
     value: 6,
-    image: spd6.jpg
 };
 
 let spade7 = {
     suit: 'spade',
     value: 7,
-    image: spd7.jpg
 };
 
 let spade8 = {
     suit: 'spade',
     value: 8,
-    image: spd8.jpg
 };
 
 let spade9 = {
     suit: 'spade',
     value: 9,
-    image: spd9.jpg
 };
 
 let spade10 = {
     suit: 'spade',
     value: 10,
-    image: spd10.jpg
-
 };
 
 let spade11 = {
     suit: 'spade',
     value: 11,
-    image: spd11.jpg
 
 };
 let spade12 = {
     suit: 'spade',
     value: 12,
-    image: spd12.jpg
 
 };
 
 let spade13 = {
     suit: 'spade',
     value: 13,
-    image: spd13.jpg
 
 }
+
 
 
 let user = 13;
@@ -203,12 +173,9 @@ let myCards = [heart1.value, heart2.value, heart3.value, heart4.value, heart5.va
 
 let opponentCards = [spade1.value, spade2.value, spade3.value, spade4.value, spade5.value, spade6.value, spade7.value, spade8.value, spade9.value, spade10.value, spade11.value, spade12.value, spade13.value];
 
-let myCardsImg = [heart1.image, heart2.image, heart3.image, heart4.image, heart5.image, heart6.image, heart7.image, heart8.image, heart9.image, heart10.image, heart11.image, heart12.image, heart13.image];
+let myCardsImg = ['hrt1.jpg', 'hrt2.jpg', 'hrt3.jpg', 'hrt4.jpg', 'hrt5.jpg', 'hrt6.jpg', 'hrt7.jpg', 'hrt8.jpg', 'hrt9.jpg', 'hrt10.jpg', 'hrt11.jpg', 'hrt12.jpg', 'hrt13.jpg']
 
-let opponentCardsImg = [spade1.image, spade2.image, spade3.image, spade4.image, spade5.image, spade6.image, spade7.image, spade8.image, spade9.image, spade10.image, spade11.image, spade12.image, spade13.image];
-
-console.log(myCardsImg);
-console.log(opponentCardsImg);
+let opponentCardsImg = ['spd1.jpg', 'spd2.jpg', 'spd3.jpg', 'spd4.jpg', 'spd5.jpg', 'spd6.jpg', 'spd7.jpg', 'spd8.jpg', 'spd9.jpg', 'spd10.jpg', 'spd11.jpg', 'spd12.jpg', 'spd13.jpg'];
 
 
 
@@ -239,3 +206,14 @@ function playRound () {
     }
   playRound ();
 
+  function get_random_image () {
+    for(let i=0; i< 13; i++) {
+    let player1Index = Math.floor(Math.random()*12)
+    let player2Index = Math.floor(Math.random()*12)
+    selected_image1 = myCardsImg[player1Index]
+    selected_image2 = opponentCardsImg[player2Index]
+ document.getElementByID('image_container1').src = './myCards/${selected_image1}'
+ document.getElementByID('image_container2').src = './opponenetCards/${selected_image2}'
+    }
+  }
+  console.log(selected_image1);
