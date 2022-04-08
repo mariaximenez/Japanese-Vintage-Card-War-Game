@@ -39,156 +39,156 @@
 let heart1 = {
     suit: 'heart',
     value: 1,
-    image: id="hrt1"
+    image: hrt1.jpg
 };
 let heart2 = {
     suit: 'heart',
     value: 2,
-    image: id="hrt2"
+    image: hrt2.jpg
 };
 let heart3 = {
     suit: 'heart',
     value: 3,
-    image: id="hrt3"
+    image: hrt3.jpg
 };
 let heart4 = {
     suit: 'heart',
     value: 4,
-    image: id="hrt4"
+    image: hrt4.jpg
 };
 
 let heart5 = {
     suit: 'heart',
     value: 5,
-    image: id="hrt5"
+    image: hrt5.jpg
 };
 
 let heart6 = {
     suit: 'heart',
     value: 6,
-    image: id="hrt6"
+    image: hrt6.jpg
 };
 
 let heart7 = {
     suit: 'heart',
     value: 7,
-    image: id="hrt7"
+    image: hrt7.jpg
 };
 
 let heart8 = {
     suit: 'heart',
     value: 8,
-    image: id="hrt8"
+    image: hrt8.jpg
 };
 
 let heart9 = {
     suit: 'heart',
     value: 9,
-    image: id="hrt9"
+    image: hrt9.jpg
 };
 
 let heart10 = {
     suit: 'heart',
     value: 10,
-    image: id="hrt10"
+    image: hrt10.jpg
 
 };
 
 let heart11 = {
     suit: 'heart',
     value: 11,
-    image: id="hrt11"
+    image: hrt11.jpg
 
 };
 let heart12 = {
     suit: 'heart',
     value: 12,
-    image: id="hrt12"
+    image: hrt12.jpg
 
 };
 
 let heart13 = {
     suit: 'heart',
     value: 13,
-    image: id="hrt13"
+    image: hrt13.jpg
 
 }
 
 let spade1 = {
     suit: 'spade',
     value: 1,
-    image: id="spd1"
+    image: spd1.jpg
 };
 let spade2 = {
     suit: 'spade',
     value: 2,
-    image: id="spd2"
+    image: spd2.jpg
 };
 let spade3 = {
     suit: 'spade',
     value: 3,
-    image: id="spd3"
+    image: spd3.jpg
 };
 let spade4 = {
     suit: 'spade',
     value: 4,
-    image: id="spd4"
+    image: spd4.jpg
 };
 
 let spade5 = {
     suit: 'spade',
     value: 5,
-    image: id="spd5"
+    image: spd5.jpg
 };
 
 let spade6 = {
     suit: 'spade',
     value: 6,
-    image: id="spd6"
+    image: spd6.jpg
 };
 
 let spade7 = {
     suit: 'spade',
     value: 7,
-    image: id="spd7"
+    image: spd7.jpg
 };
 
 let spade8 = {
     suit: 'spade',
     value: 8,
-    image: id="spd8"
+    image: spd8.jpg
 };
 
 let spade9 = {
     suit: 'spade',
     value: 9,
-    image: id="spd9"
+    image: spd9.jpg
 };
 
 let spade10 = {
     suit: 'spade',
     value: 10,
-    image: id="spd10"
+    image: spd10.jpg
 
 };
 
 let spade11 = {
     suit: 'spade',
     value: 11,
-    image: id="spd11"
+    image: spd11.jpg
 
 };
 let spade12 = {
     suit: 'spade',
     value: 12,
-    image: id="spd12"
+    image: spd12.jpg
 
 };
 
 let spade13 = {
     suit: 'spade',
     value: 13,
-    image: id="spd13"
+    image: spd13.jpg
 
 }
 
