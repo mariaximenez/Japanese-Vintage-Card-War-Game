@@ -212,7 +212,8 @@ function playRound () {
     let selected_image1 =  myCardsImg[player1Index];
     let selected_image2 = opponentCardsImg[player2Index];
 
-document.getElementById("image_container1").src = "./myCards/hrt1.jpg";
-document.getElementById("image_container2").src = "./opponenetCards/spd5.jpg";
+document.getElementById("image_container1").src = "./myCards/${selected_image1}";
+document.getElementById("image_container2").src = "./opponenetCards/${selected_image2}";
+  }
     
  
