@@ -207,13 +207,12 @@ function playRound () {
   playRound ();
 
   function get_random_image () {
-    for(let i=0; i< 13; i++) {
-    let player1Index = Math.floor(Math.random()*12)
-    let player2Index = Math.floor(Math.random()*12)
-    selected_image1 = myCardsImg[player1Index]
-    selected_image2 = opponentCardsImg[player2Index]
- document.getElementByID('image_container1').src = './myCards/${selected_image1}'
- document.getElementByID('image_container2').src = './opponenetCards/${selected_image2}'
-    }
-  }
-  console.log(selected_image1);
+    let player1Index = Math.floor(Math.random()*12);
+    let player2Index = Math.floor(Math.random()*12);
+    let selected_image1 =  myCardsImg[player1Index];
+    let selected_image2 = opponentCardsImg[player2Index];
+
+document.getElementById("image_container1").src = "./myCards/hrt1.jpg";
+document.getElementById("image_container2").src = "./opponenetCards/spd5.jpg";
+    
+ 
