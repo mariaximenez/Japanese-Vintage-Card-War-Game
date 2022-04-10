@@ -12,13 +12,10 @@ h2
 
 .myCards {
 float: left;
-display: hidden;
 }
 
 .opponentCards {
 float: right;
-display: hidden;
-
 }
 
 .center {
@@ -32,5 +29,14 @@ display: hidden;
     margin: auto;
 
 }
+#image_container1 {
+width: 200px;
+height: 300px;
+}
 
+#image_container2 {
+    width: 200px;
+    height: 300px;
+    }
+    
 
