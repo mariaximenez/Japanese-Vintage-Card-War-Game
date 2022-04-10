@@ -1,19 +1,26 @@
 body {
     background-image: url(https://collectionapi.metmuseum.org/api/collection/v1/iiif/56915/128774/main-image);
+    text-align: center;
+    height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
 
 
-
-
 h1 {
-    color: blue;
-    font-size: 70px;
+    color: rgb(210, 52, 52);
+    font-size: 150px;
     text-align: center;
+    font-family: Cormorant Garamond, serif;
 }
 
 h2 
 {
     text-align: center;
+    font-family: Cormorant Garamond, serif;
+    font-size: 60px;
+    color:rgb(193, 41, 87);
 
 }
 
