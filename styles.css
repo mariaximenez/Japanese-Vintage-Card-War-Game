@@ -33,24 +33,34 @@ float: right;
 }
 
 .center {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    right: 50%;
-    padding: 10px;
-    text-align: center;
-    width: auto;
-    margin: auto;
+    margin:auto;
+    border:1px solid;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   font-size: 30px;
+   background-image: url(https://image.shutterstock.com/z/stock-vector-samurai-warrior-mask-traditional-armor-of-japanese-warrior-vector-illustration-shirt-graphic-1310319145.jpg);
+   background-size: 120px;
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   color:  rgb(210, 52, 52);
+   font-style:italic
+   border: 2px solid;
+   font-family: Cormorant Garamond, serif;
 
 }
 #image_container1 {
 width: 200px;
 height: 300px;
+object-position: bottom left;
 }
 
 #image_container2 {
     width: 200px;
     height: 300px;
+    object-position: bottom right;
     }
     
 
