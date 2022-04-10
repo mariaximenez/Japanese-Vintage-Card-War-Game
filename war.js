@@ -187,6 +187,7 @@ function playRound () {
       if (myCards[player1Index] > opponentCards[player2Index]) {
     user + 1;
     opponent -1;
+    get_random_image();
     console.log(myCardsImg[player1Index]);
     console.log(opponentCardsImg[player2Index]);
   console.log("You beat your opponent!");}
@@ -202,19 +203,14 @@ function playRound () {
     console.log(opponentCardsImg[player2Index]);
       console.log("It's a tie! WAR!")
   }
-      }
-    }
-  playRound ();
-
+      } {
   function get_random_image () {
-    let player1Index = Math.floor(Math.random()*12);
-    let player2Index = Math.floor(Math.random()*12);
+    // let player1Index = Math.floor(Math.random()*12);
+    // let player2Index = Math.floor(Math.random()*12);
     selected_image1 =  myCardsImg[player1Index];
     selected_image2 = opponentCardsImg[player2Index]; {
 document.getElementById("image_container1").src = `./myCards/${selected_image1}` 
-document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;}
+document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;} 
   }
-
-
-
-
+}
+}
