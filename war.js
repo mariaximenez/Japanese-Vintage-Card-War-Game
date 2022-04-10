@@ -177,14 +177,13 @@ let myCardsImg = ['hrt1.jpg', 'hrt2.jpg', 'hrt3.jpg', 'hrt4.jpg', 'hrt5.jpg', 'h
 
 let opponentCardsImg = ['spd1.jpg', 'spd2.jpg', 'spd3.jpg', 'spd4.jpg', 'spd5.jpg', 'spd6.jpg', 'spd7.jpg', 'spd8.jpg', 'spd9.jpg', 'spd10.jpg', 'spd11.jpg', 'spd12.jpg', 'spd13.jpg'];
 
-let player1Index = Math.floor(Math.random()*12)
-let player2Index = Math.floor(Math.random()*12)
+
 
 function playRound () { 
-let player1Index = Math.floor(Math.random()*12)
-let player2Index = Math.floor(Math.random()*12)
    for(let i=0; i< 13; i++) {
-      if (myCards[player1Index] > opponentCards[player2Index]) {
+    let player1Index = Math.floor(Math.random()*12)
+    let player2Index = Math.floor(Math.random()*12) 
+    if (myCards[player1Index] > opponentCards[player2Index]) {
     user + 1;
     opponent -1;
     console.log(myCardsImg[player1Index]);
@@ -203,15 +202,17 @@ let player2Index = Math.floor(Math.random()*12)
       console.log("It's a tie! WAR!")
   }
       } 
+    }
       playRound();
 
 
 
-      function get_random_image () {
-        let player1Index = Math.floor(Math.random()*12);
-        let player2Index = Math.floor(Math.random()*12);
-        selected_image1 =  myCardsImg[player1Index];
-        selected_image2 = opponentCardsImg[player2Index]; {
-    document.getElementById("image_container1").src = `./myCards/${selected_image1}`
-    document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;}
-      }
+    //   function get_random_image () {
+    //     let player1Index = Math.floor(Math.random()*12);
+    //     let player2Index = Math.floor(Math.random()*12);
+    //     selected_image1 = myCardsImg[player1Index];
+    //     selected_image2 = opponentCardsImg[player2Index]; {
+    // document.getElementById("image_container1").src = `./myCards/${selected_image1}`;
+    // document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;}
+    //     }
+      
