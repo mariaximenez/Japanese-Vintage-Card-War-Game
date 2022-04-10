@@ -207,12 +207,12 @@ function playRound () {
 
 
 
-    //   function get_random_image () {
-    //     let player1Index = Math.floor(Math.random()*12);
-    //     let player2Index = Math.floor(Math.random()*12);
-    //     selected_image1 = myCardsImg[player1Index];
-    //     selected_image2 = opponentCardsImg[player2Index]; {
-    // document.getElementById("image_container1").src = `./myCards/${selected_image1}`;
-    // document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;}
-    //     }
+      function get_random_image () {
+        let player1Index = Math.floor(Math.random()*12);
+        let player2Index = Math.floor(Math.random()*12);
+        selected_image1 = myCardsImg[player1Index];
+        selected_image2 = opponentCardsImg[player2Index]; {
+    document.getElementById("image_container1").src = `./myCards/${selected_image1}`;
+    document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;}
+        }
       
