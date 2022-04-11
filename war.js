@@ -184,14 +184,14 @@ function playRound () {
     let player1Index = Math.floor(Math.random()*12)
     let player2Index = Math.floor(Math.random()*12) 
     if (myCards[player1Index] > opponentCards[player2Index]) {
-    user + 1;
-    opponent -1;
+    user + 1 = true;
+    opponent -1 = true;
     console.log(myCardsImg[player1Index]);
     console.log(opponentCardsImg[player2Index]);
   console.log("You beat your opponent!");}
   else if ((opponentCards[player2Index]) > (myCards[player1Index])) {
-      opponent + 1;
-      user -1;
+      opponent + 1 = true;
+      user -1 = true;
       console.log(myCardsImg[player1Index]);
       console.log(opponentCardsImg[player2Index]);
       console.log("Your opponent beat you!");
@@ -216,3 +216,15 @@ function playRound () {
     document.getElementById("image_container2").src = `./opponentCards/${selected_image2}`;}
         }
       
+        function pointsUpdate () {
+            if (user + 1 = true) {
+                user + 1 = n;
+                let myScore = document.querySelector("myScore");
+                myScore.innerText = '"My Score = " + n';}
+                if (opponent + 1 = true) {
+                    opponent + 1 = playRound;
+                    let opponentScore = document.querySelector("opponentScore");
+                    opponentScore.innerText = '"Opponent score = " + p';
+                }
+
+            }
