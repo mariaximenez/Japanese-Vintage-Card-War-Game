@@ -145,8 +145,7 @@ let spade13 = {
   value: 13,
 };
 
-let user = 13;
-let opponent = 13;
+
 
 let myCards = [
   heart1.value,
@@ -215,23 +214,28 @@ let opponentCardsImg = [
 const drawButton = document.querySelector(".center");
 drawButton.addEventListener("click", get_random_image);
 
+let user = 13;
+let opponent = 13;
+
 function playRound(p1, p2) {
     console.log(myCardsImg[p1]);
     console.log(opponentCardsImg[p2]);
     if (myCards[p1] > opponentCards[p2]) {
-      user += 1;
+      user += 1 === true;
       opponent -= 1;
-      console.log("You beat your opponent!");
+      console.log("You beat your opponent!"); 
+      pointsUpdate();
     } else if (opponentCards[p2] > myCards[p1]) {
-      opponent += 1;
+      opponent += 1 === true;
       user -= 1;
       console.log("Your opponent beat you!");
+      pointsUpdate();
     } else {
       console.log("It's a tie! WAR!");
     }
   }
 
-//   playRound();
+
 
 function get_random_image() {
   let player1Index = Math.floor(Math.random() * 12);
@@ -249,15 +253,17 @@ function get_random_image() {
   playRound(player1Index, player2Index);
 }
 
-// function pointsUpdate () {
-//     if (user + 1 = true) {
-//         user + 1 = n;
-//         let myScore = document.querySelector("myScore");
-//         myScore.innerText = '"My Score = " + n';}
-//         if (opponent + 1 = true) {
-//             opponent + 1 = playRound;
-//             let opponentScore = document.querySelector("opponentScore");
-//             opponentScore.innerText = '"Opponent score = " + p';
-//         }
+function pointsUpdate () {
+    if (user += 1 === true) {
+        let user = 13;
+        let n = user += 1;
+        let myScore = document.querySelector(".myScore");
+        myScore.innerText = `My Score =  + ${n}`;}
+        if (opponent += 1 === true) {
+            let opponent = 13;
+            let p = opponent += 1;
+            let opponentScore = document.querySelector(".opponentScore");
+            opponentScore.innerText = `Opponent score =  + ${p}`;
+        }
+    }
 
-//     }
