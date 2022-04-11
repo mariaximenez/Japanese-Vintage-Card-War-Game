@@ -271,39 +271,50 @@ function get_random_image() {
 function get_war_cards() {
   let player1Index = Math.floor(Math.random() * 12);
   let player2Index = Math.floor(Math.random() * 12);
+  let player3Index = Math.floor(Math.random() * 12);
+  let player4Index = Math.floor(Math.random() * 12);
   selected_image1 = myCardsImg[player1Index];
   selected_image2 = opponentCardsImg[player2Index];
-  {
+  selected_image3 = myCardsImg[player3Index]
+  selected_image4 = opponentCardsImg[player4Index];
     document.getElementById("user_war_card1").src = `./myCards/${selected_image1}`;
-      document.getElementById("user_war_card2").src = `./myCards/${selected_image1}`;
+    document.getElementById("user_war_card2").src = `./myCards/${selected_image3}`;
     document.getElementById("opponent_war_card1").src = `./opponentCards/${selected_image2}`;
-    document.getElementById("opponent_war_card2").src = `./opponentCards/${selected_image2}`;
-  } {
-    if (myCards[p1] > opponentCards[p2]) {
+    document.getElementById("opponent_war_card2").src = `./opponentCards/${selected_image4}`;
+    if (myCardsImg[player3Index] > opponentCardsImg[player4Index]) {
       user += 6;
-      opponent -= 6; {
+      opponent -= 6; 
       let myScore = document.querySelector(".myScore");
-      myScore.innerText = `My Score = ${user}`;}
-      {
-   let opponentScore = document.querySelector(".opponentScore");
+      myScore.innerText = `My Score = ${user}`;
+      let opponentScore = document.querySelector(".opponentScore");
       opponentScore.innerText = `Opponent score =  + ${opponent}`;
-       }
-      console.log("You beat your opponent!"); 
-    } 
-    else if (opponentCards[p2] > myCards[p1]) {
+      console.log("You beat your opponent!");  
+      get_random_image ();}
+     else if (myCardImg[player3Index] < opponentCardsImg[player4Index]) {
       opponent += 6;
-      user -= 6;
-      {
+      user -= 6; 
         let myScore = document.querySelector(".myScore");
-        myScore.innerText = `My Score = ${user}`;}
-        {
-     let opponentScore = document.querySelector(".opponentScore");
+        myScore.innerText = `My Score = ${user}`;
+        let opponentScore = document.querySelector(".opponentScore");
         opponentScore.innerText = `Opponent score =  + ${opponent}`;
-         }
       console.log("Your opponent beat you!");
-    } else {
-      get_war_cards ();
+       get_random_image ();}
+       else 
+      {
+       playRound();
       console.log("It's a tie! WAR!");
     }
   }
-}
+
+
+
+
+  // document.getElementById("user_war_card1").src = none;
+  // document.getElementById("user_war_card2").src = none;
+  // document.getElementById("opponent_war_card1").src = none;
+  // document.getElementById("opponent_war_card2").src = none;}
+
+  // document.getElementById("user_war_card1").src = none;
+  // document.getElementById("user_war_card2").src = none;
+  // document.getElementById("opponent_war_card1").src = none;
+  // document.getElementById("opponent_war_card2").src = none;}
