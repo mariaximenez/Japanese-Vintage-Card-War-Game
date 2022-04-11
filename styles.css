@@ -46,7 +46,7 @@ float: right;
    background-repeat: no-repeat; 
    background-size: cover;
    color:  rgb(210, 52, 52);
-   font-style:italic
+   font-style:italic;
    border: 2px solid;
    font-family: Cormorant Garamond, serif;
 
@@ -62,5 +62,32 @@ object-position: bottom left;
     height: 300px;
     object-position: bottom right;
     }
+
+    #user_war_card1 {
+        width: 200px;
+        height: 300px;
+        object-position: bottom left;
+        }
+        
+        #user_war_card2 {
+            width: 200px;
+            height: 300px;
+            object-position: bottom right;
+            }
+
+            #opponent_war_card1{
+                width: 200px;
+                height: 300px;
+                object-position: bottom left;
+                }
+                
+                #opponent_war_card2 {
+                    width: 200px;
+                    height: 300px;
+                    object-position: bottom right;
+                    }
+
+
+
     
 

@@ -25,7 +25,7 @@
 
 let heart1 = {
   suit: "heart",
-  value: 1,
+  value: 14,
 };
 let heart2 = {
   suit: "heart",
@@ -86,7 +86,7 @@ let heart13 = {
 
 let spade1 = {
   suit: "spade",
-  value: 1,
+  value: 14,
 };
 let spade2 = {
   suit: "spade",
@@ -243,6 +243,7 @@ function playRound(p1, p2) {
          }
       console.log("Your opponent beat you!");
     } else {
+      get_war_cards ();
       console.log("It's a tie! WAR!");
     }
   }
@@ -267,3 +268,42 @@ function get_random_image() {
 
 
 
+function get_war_cards() {
+  let player1Index = Math.floor(Math.random() * 12);
+  let player2Index = Math.floor(Math.random() * 12);
+  selected_image1 = myCardsImg[player1Index];
+  selected_image2 = opponentCardsImg[player2Index];
+  {
+    document.getElementById("user_war_card1").src = `./myCards/${selected_image1}`;
+      document.getElementById("user_war_card2").src = `./myCards/${selected_image1}`;
+    document.getElementById("opponent_war_card1").src = `./opponentCards/${selected_image2}`;
+    document.getElementById("opponent_war_card2").src = `./opponentCards/${selected_image2}`;
+  } {
+    if (myCards[p1] > opponentCards[p2]) {
+      user += 6;
+      opponent -= 6; {
+      let myScore = document.querySelector(".myScore");
+      myScore.innerText = `My Score = ${user}`;}
+      {
+   let opponentScore = document.querySelector(".opponentScore");
+      opponentScore.innerText = `Opponent score =  + ${opponent}`;
+       }
+      console.log("You beat your opponent!"); 
+    } 
+    else if (opponentCards[p2] > myCards[p1]) {
+      opponent += 6;
+      user -= 6;
+      {
+        let myScore = document.querySelector(".myScore");
+        myScore.innerText = `My Score = ${user}`;}
+        {
+     let opponentScore = document.querySelector(".opponentScore");
+        opponentScore.innerText = `Opponent score =  + ${opponent}`;
+         }
+      console.log("Your opponent beat you!");
+    } else {
+      get_war_cards ();
+      console.log("It's a tie! WAR!");
+    }
+  }
+}
