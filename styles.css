@@ -20,7 +20,7 @@ h2
     text-align: center;
     font-family: Cormorant Garamond, serif;
     font-size: 60px;
-    color:rgb(193, 41, 87);
+    color:rgb(210, 52, 52);
 
 }
 
@@ -29,7 +29,8 @@ h2
         text-align: center;
         font-family: Cormorant Garamond, serif;
         font-size: 60px;
-        color:rgb(193, 41, 87);
+        color:rgb(210, 52, 52);
+        background-color: white;
     }
 
 .myCards {
@@ -59,6 +60,29 @@ float: right;
    font-family: Cormorant Garamond, serif;
 
 }
+
+.reset {
+    margin: auto;
+    border:1px solid;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 10px 10px 10px;
+   font-size: 30px;
+   background-image: none;
+   background-position: center; 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   color:  rgb(210, 52, 52);
+   font-style:italic;
+   border: 2px solid;
+   font-family: Cormorant Garamond, serif;
+
+}
+
+
+
+
 #image_container1 {
 width: 200px;
 height: 300px;

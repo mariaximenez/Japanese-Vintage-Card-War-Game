@@ -214,6 +214,9 @@ let opponentCardsImg = [
 const drawButton = document.querySelector(".center");
 drawButton.addEventListener("click", get_random_image);
 
+const resetButton = document.querySelector(".reset");
+resetButton.addEventListener("click", reset);
+
 let user = 13;
 let opponent = 13;
 
@@ -254,7 +257,6 @@ function get_random_image() {
     document.getElementById("user_war_card2").remove();
     document.getElementById("opponent_war_card1").remove();
     document.getElementById("opponent_war_card2").remove();
-    // document.getElementById("gameOverMessage").remove();
     let userWarCard1 = document.createElement('img')
     userWarCard1.setAttribute('id',"user_war_card1")
     let userWarCard2 = document.createElement('img')
@@ -263,7 +265,9 @@ function get_random_image() {
     opponentWarCard1.setAttribute('id',"opponent_war_card1")
     let opponentWarCard2 = document.createElement('img')
     opponentWarCard2.setAttribute('id',"opponent_war_card2")
+   
 
+    
 document.querySelector(".myCards").append(userWarCard1, userWarCard2)
 document.querySelector(".opponentCards").append(opponentWarCard1, opponentWarCard2)
 
@@ -348,4 +352,15 @@ function gameOverMessage () {
   let gameOverMessage = document.createElement('gameOverMessage');
   gameOverMessage.setAttribute('id',"gameOverMessage");
   document.querySelector(".message").append("If you embark on an uncharted path, infinite secrets will appear.-Bushido");
+}
+
+function reset () {
+  document.getElementById("gameOverMessage").remove();
+  user = 13
+  opponent = 13
+  let myScore = document.querySelector(".myScore");
+  myScore.innerText = `${user}`;
+  let opponentScore = document.querySelector(".opponentScore");
+  opponentScore.innerText = `${opponent}`;
+  get_random_image();
 }
