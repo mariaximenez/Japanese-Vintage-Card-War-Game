@@ -225,32 +225,50 @@ function playRound(p1, p2) {
       opponent -= 1; {
       let myScore = document.querySelector(".myScore");
       myScore.innerText = `My Score = ${user}`;}
-      {
-   let opponentScore = document.querySelector(".opponentScore");
+      let opponentScore = document.querySelector(".opponentScore");
       opponentScore.innerText = `Opponent score =  + ${opponent}`;
-       }
-      console.log("You beat your opponent!"); 
+       console.log("You beat your opponent!"); 
+       gameOver();
     } 
     else if (opponentCards[p2] > myCards[p1]) {
       opponent += 1;
       user -= 1;
-      {
         let myScore = document.querySelector(".myScore");
-        myScore.innerText = `My Score = ${user}`;}
-        {
-     let opponentScore = document.querySelector(".opponentScore");
+        myScore.innerText = `My Score = ${user}`;
+        let opponentScore = document.querySelector(".opponentScore");
         opponentScore.innerText = `Opponent score =  + ${opponent}`;
-         }
-      console.log("Your opponent beat you!");
+         console.log("Your opponent beat you!");
+         gameOver();
     } else {
       get_war_cards ();
       console.log("It's a tie! WAR!");
+      gameOver();
     }
   }
 
 
 
 function get_random_image() {
+
+  document.getElementById("user_war_card1").remove();
+    document.getElementById("user_war_card2").remove();
+    document.getElementById("opponent_war_card1").remove();
+    document.getElementById("opponent_war_card2").remove();
+    let userWarCard1 = document.createElement('img')
+    userWarCard1.setAttribute('id',"user_war_card1")
+    let userWarCard2 = document.createElement('img')
+    userWarCard2.setAttribute('id',"user_war_card2")
+    let opponentWarCard1 = document.createElement('img')
+    opponentWarCard1.setAttribute('id',"opponent_war_card1")
+    let opponentWarCard2 = document.createElement('img')
+    opponentWarCard2.setAttribute('id',"opponent_war_card2")
+
+document.querySelector(".myCards").append(userWarCard1, userWarCard2)
+document.querySelector(".opponentCards").append(opponentWarCard1, opponentWarCard2)
+
+
+
+
   let player1Index = Math.floor(Math.random() * 12);
   let player2Index = Math.floor(Math.random() * 12);
   selected_image1 = myCardsImg[player1Index];
@@ -281,6 +299,7 @@ function get_war_cards() {
     document.getElementById("user_war_card2").src = `./myCards/${selected_image3}`;
     document.getElementById("opponent_war_card1").src = `./opponentCards/${selected_image2}`;
     document.getElementById("opponent_war_card2").src = `./opponentCards/${selected_image4}`;
+    console.log(myCardsImg[player3Index])
     if (myCardsImg[player3Index] > opponentCardsImg[player4Index]) {
       user += 6;
       opponent -= 6; 
@@ -289,8 +308,9 @@ function get_war_cards() {
       let opponentScore = document.querySelector(".opponentScore");
       opponentScore.innerText = `Opponent score =  + ${opponent}`;
       console.log("You beat your opponent!");  
-      get_random_image ();}
-     else if (myCardImg[player3Index] < opponentCardsImg[player4Index]) {
+      }
+     
+     else if (myCardsImg[player3Index] < opponentCardsImg[player4Index]) {
       opponent += 6;
       user -= 6; 
         let myScore = document.querySelector(".myScore");
@@ -298,7 +318,7 @@ function get_war_cards() {
         let opponentScore = document.querySelector(".opponentScore");
         opponentScore.innerText = `Opponent score =  + ${opponent}`;
       console.log("Your opponent beat you!");
-       get_random_image ();}
+       }
        else 
       {
        playRound();
@@ -306,7 +326,20 @@ function get_war_cards() {
     }
   }
 
-
+function gameOver () {
+  if (user <= 0) {
+    let myScore = document.querySelector(".myScore");
+    myScore.innerText = `You lost`;
+    let opponentScore = document.querySelector(".opponentScore");
+    opponentScore.innerText = `Opponent Won`;
+  }
+  else if (opponent <=0) {
+    let myScore = document.querySelector(".myScore");
+    myScore.innerText = `You won!`;
+    let opponentScore = document.querySelector(".opponentScore");
+    opponentScore.innerText = `Opponent Lost`;
+  }
+}
 
 
   // document.getElementById("user_war_card1").src = none;
