@@ -321,7 +321,7 @@ function get_war_cards() {
         let myScore = document.querySelector(".myScore");
         myScore.innerText = `My Score = ${user}`;
         let opponentScore = document.querySelector(".opponentScore");
-        opponentScore.innerText = `Opponent score =  + ${opponent}`;
+        opponentScore.innerText = `Opponent score =  ${opponent}`;
       console.log("Your opponent beat you!");
        }
        else 

@@ -36,7 +36,10 @@ h2
     font-size: 20px;
     position: relative;
     top: -200px;
-    
+    background-color: white;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 15px;
 
 }
 
@@ -44,6 +47,10 @@ h2
     font-size: 20px;
     position: relative;
     top: -200px;
+    background-color: white;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 15px;
 
 
 }
@@ -58,6 +65,7 @@ h2
         background-color: white;
         position: relative;
         top: -200px;
+        border-radius: 15px;
     }
 
 .myCards {
@@ -86,6 +94,7 @@ float: right;
    font-family: Cormorant Garamond, serif;
    position: relative;
     top: -150px;
+    border-radius: 15px;
 
 }
 
@@ -107,6 +116,7 @@ float: right;
    font-family: Cormorant Garamond, serif;
    position: relative;
    top: -130px;
+   border-radius: 15px;
 
 }
 
@@ -119,6 +129,7 @@ height: 300px;
 object-position: bottom left;
 position: relative;
     top: -200px;
+    border-radius: 15px;
 }
 
 #image_container2 {
@@ -127,6 +138,7 @@ position: relative;
     object-position: bottom right;
     position: relative;
     top: -200px;
+    border-radius: 15px;
     }
 
     #user_war_card1 {
@@ -135,6 +147,7 @@ position: relative;
         object-position: bottom left;
         position: relative;
     top: -200px;
+    border-radius: 15px;
         }
         
         #user_war_card2 {
@@ -143,6 +156,7 @@ position: relative;
             object-position: bottom right;
             position: relative;
     top: -200px;
+    border-radius: 15px;
             }
 
             #opponent_war_card1{
@@ -151,6 +165,7 @@ position: relative;
                 object-position: bottom left;
                 position: relative;
     top: -200px;
+    border-radius: 15px;
                 }
                 
                 #opponent_war_card2 {
@@ -159,6 +174,7 @@ position: relative;
                     object-position: bottom right;
                     position: relative;
     top: -200px;
+    border-radius: 15px;
                     }
 
 
