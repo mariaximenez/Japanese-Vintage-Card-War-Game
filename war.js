@@ -252,7 +252,7 @@ function playRound(p1, p2) {
 
 
 function get_random_image() {
-
+ 
   document.getElementById("user_war_card1").remove();
     document.getElementById("user_war_card2").remove();
     document.getElementById("opponent_war_card1").remove();
@@ -351,11 +351,12 @@ function gameOver () {
 function gameOverMessage () {
   let gameOverMessage = document.createElement('gameOverMessage');
   gameOverMessage.setAttribute('id',"gameOverMessage");
-  document.querySelector(".message").append("If you embark on an uncharted path, infinite secrets will appear.-Bushido");
+  document.getElementById("gameOverMessage").innerText="If you embark on an uncharted path, infinite secrets will appear.-Bushido";
+  document.getElementById("gameOverMessage").style.display='block';
 }
 
 function reset () {
-  document.getElementById("gameOverMessage").remove();
+  document.getElementById("gameOverMessage").style.display='none';
   user = 13
   opponent = 13
   let myScore = document.querySelector(".myScore");
