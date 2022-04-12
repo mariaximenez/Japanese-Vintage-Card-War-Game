@@ -34,12 +34,16 @@ h2
 
 .myScore {
     font-size: 20px;
+    position: relative;
+    top: -200px;
     
 
 }
 
 .opponentScore {
     font-size: 20px;
+    position: relative;
+    top: -200px;
 
 
 }
@@ -52,6 +56,8 @@ h2
         font-size: 40px;
         color:rgb(210, 52, 52);
         background-color: white;
+        position: relative;
+        top: -200px;
     }
 
 .myCards {
@@ -78,6 +84,8 @@ float: right;
    color: rgb(210, 52, 52);
    border: 8 px solid;
    font-family: Cormorant Garamond, serif;
+   position: relative;
+    top: -150px;
 
 }
 
@@ -97,6 +105,8 @@ float: right;
    font-style:italic;
    border: 2px solid;
    font-family: Cormorant Garamond, serif;
+   position: relative;
+   top: -130px;
 
 }
 
@@ -107,36 +117,48 @@ float: right;
 width: 200px;
 height: 300px;
 object-position: bottom left;
+position: relative;
+    top: -200px;
 }
 
 #image_container2 {
     width: 200px;
     height: 300px;
     object-position: bottom right;
+    position: relative;
+    top: -200px;
     }
 
     #user_war_card1 {
         width: 200px;
         height: 300px;
         object-position: bottom left;
+        position: relative;
+    top: -200px;
         }
         
         #user_war_card2 {
             width: 200px;
             height: 300px;
             object-position: bottom right;
+            position: relative;
+    top: -200px;
             }
 
             #opponent_war_card1{
                 width: 200px;
                 height: 300px;
                 object-position: bottom left;
+                position: relative;
+    top: -200px;
                 }
                 
                 #opponent_war_card2 {
                     width: 200px;
                     height: 300px;
                     object-position: bottom right;
+                    position: relative;
+    top: -200px;
                     }
 
 
