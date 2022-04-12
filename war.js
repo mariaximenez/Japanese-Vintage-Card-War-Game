@@ -347,6 +347,5 @@ function gameOver () {
 function gameOverMessage () {
   let gameOverMessage = document.createElement('gameOverMessage');
   gameOverMessage.setAttribute('id',"gameOverMessage");
-  document.querySelector(".message").append("Bushidosaying");
-  
+  document.querySelector(".message").append("If you embark on an uncharted path, infinite secrets will appear.-Bushido");
 }
