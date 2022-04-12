@@ -254,6 +254,7 @@ function get_random_image() {
     document.getElementById("user_war_card2").remove();
     document.getElementById("opponent_war_card1").remove();
     document.getElementById("opponent_war_card2").remove();
+    // document.getElementById("gameOverMessage").remove();
     let userWarCard1 = document.createElement('img')
     userWarCard1.setAttribute('id',"user_war_card1")
     let userWarCard2 = document.createElement('img')
@@ -331,23 +332,21 @@ function gameOver () {
     let myScore = document.querySelector(".myScore");
     myScore.innerText = `You lost`;
     let opponentScore = document.querySelector(".opponentScore");
-    opponentScore.innerText = `Opponent Won`;
+    opponentScore.innerText = `Opponent Won! Score: ${opponent}`;
+    gameOverMessage();
   }
   else if (opponent <=0) {
     let myScore = document.querySelector(".myScore");
-    myScore.innerText = `You won!`;
+    myScore.innerText = `You won! Score: ${user}`;
     let opponentScore = document.querySelector(".opponentScore");
     opponentScore.innerText = `Opponent Lost`;
+    gameOverMessage();
   }
 }
 
-
-  // document.getElementById("user_war_card1").src = none;
-  // document.getElementById("user_war_card2").src = none;
-  // document.getElementById("opponent_war_card1").src = none;
-  // document.getElementById("opponent_war_card2").src = none;}
-
-  // document.getElementById("user_war_card1").src = none;
-  // document.getElementById("user_war_card2").src = none;
-  // document.getElementById("opponent_war_card1").src = none;
-  // document.getElementById("opponent_war_card2").src = none;}
+function gameOverMessage () {
+  let gameOverMessage = document.createElement('gameOverMessage');
+  gameOverMessage.setAttribute('id',"gameOverMessage");
+  document.querySelector(".message").append("Bushidosaying");
+  
+}
