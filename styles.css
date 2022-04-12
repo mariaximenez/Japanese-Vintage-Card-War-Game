@@ -14,6 +14,10 @@ h1 {
     font-size: 150px;
     text-align: center;
     font-family: Cormorant Garamond, serif;
+    padding: 10px;
+    position: relative;
+    top: -40px;
+
 }
 
 h2 
@@ -22,6 +26,9 @@ h2
     font-family: Cormorant Garamond, serif;
     font-size: 60px;
     color:rgb(210, 52, 52);
+    padding: 10px;
+    position: relative;
+    top: -200px;
 
 }
 
