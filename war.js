@@ -1,27 +1,4 @@
-// //Create just 10 object cards. Then put them in array. Then go through a for loop of the cards. two arrays? My array and opponent array and have those cards battle each other.
-// //two objects- each object will have the suit, value, and image
-// //store these objects in an array (current cards)
-// //function that takes in two cards- card a and card b and comparaes value
-// //if card a beats card b, console.log player 1 wins
-// //if card a = card b,
 
-// // document.querySelector('.center').addEventListener("click",  function () {console.log(Hello);});
-
-// // let opponentCards = document.querySelectorAll(".opponentCards")
-// // console.log(opponentCards);
-// // let myCards = document.querySelectorAll(".myCards");
-// // console.log(myCards);
-// // let cards = document.getElementByTagName(div);
-// // console.log("cards");
-
-// // function shuffle ()
-// // this.opponentCards.sort((a,b) +> Math.random - .5)
-// // console.log
-
-// // function shuffle ()
-// // this.myCards.sort((a,b) +> Math.random - .5)
-
-// //button that has an array of cards for each player and removes the last card from each array as the current card (later)
 
 let heart1 = {
   suit: "heart",
@@ -266,12 +243,8 @@ function get_random_image() {
     let opponentWarCard2 = document.createElement('img')
     opponentWarCard2.setAttribute('id',"opponent_war_card2")
    
-
-    
 document.querySelector(".myCards").append(userWarCard1, userWarCard2)
 document.querySelector(".opponentCards").append(opponentWarCard1, opponentWarCard2)
-
-
 
 
   let player1Index = Math.floor(Math.random() * 12);
@@ -363,5 +336,4 @@ function reset () {
   myScore.innerText = `${user}`;
   let opponentScore = document.querySelector(".opponentScore");
   opponentScore.innerText = `${opponent}`;
-  get_random_image();
 }
