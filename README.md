@@ -1,6 +1,6 @@
 Japanese Vintage Card War Game
 
-Enjoy the elegance of the feminine form and the vibrant colors and patterns of 18th Century Japanese dress as depicted by artist Utamaro as you play a card game of War. Even if you lose, you'll be transported to a seductive, alluring space.
+Enjoy the elegance of the feminine form and the vibrant colors and patterns of 18th Century Japanese dress as depicted by Japanese wood print artists- Utamaro, Hokusai, Sharaku, and Eishi- as you play a card game of War. Even if you lose, you'll be transported to a seductive, alluring space.
 
 
 
