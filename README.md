@@ -1,6 +1,10 @@
 Japanese Vintage Card War Game
 
-Enjoy the elegance of the feminine form and the vibrant colors and patterns of 18th Century Japanese dress as depicted by artist Utamaro as you play a card game of War. Even if you lose, you'll be transported to a seductive, alluring space. 
+Enjoy the elegance of the feminine form and the vibrant colors and patterns of 18th Century Japanese dress as depicted by artist Utamaro as you play a card game of War. Even if you lose, you'll be transported to a seductive, alluring space.
+
+
+<img width="1439" alt="Japanese Vintage Card Game" src="https://user-images.githubusercontent.com/101551729/163075145-f577a98e-682c-40b7-ad48-11b04fdfe925.png">
+
 
 Instructions: Click the "DRAW" button until you win or lose. Click the "RESET" button to start over. At the game's conclusion, ponder the quote from Bushido, a well-known Japanese writer on the principles of the Samurai, as you play again.
 
