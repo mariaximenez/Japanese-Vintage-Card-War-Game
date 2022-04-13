@@ -3,13 +3,19 @@ Japanese Vintage Card War Game
 Enjoy the elegance of the feminine form and the vibrant colors and patterns of 18th Century Japanese dress as depicted by artist Utamaro as you play a card game of War. Even if you lose, you'll be transported to a seductive, alluring space.
 
 
+
+
+### Wireframes: https://miro.com/app/board/uXjVO-j59FA=/?invite_link_id=79255309464
+<img width="258" alt="War Game WireFrame" src="https://user-images.githubusercontent.com/101551729/162010447-9eb40c61-665f-4604-a59c-74b4a7a3de75.PNG">
+
+
+
 <img width="1439" alt="Japanese Vintage Card Game" src="https://user-images.githubusercontent.com/101551729/163075145-f577a98e-682c-40b7-ad48-11b04fdfe925.png">
 
 
 Instructions: Click the "DRAW" button until you win or lose. Click the "RESET" button to start over. At the game's conclusion, ponder the quote from Bushido, a well-known Japanese writer on the principles of the Samurai, as you play again.
 
 Technologies used JavaScript, HTML, and CSS.
-
 
 
 Play Here: https://mariaximenez.github.io/Japanese-Vintage-Card-War-Game/
@@ -71,9 +77,4 @@ if (opponentDeck ===0) {
 console.log (You won the game!)}
 
 
-
-### Basic User stories
-
-### Wireframes: https://miro.com/app/board/uXjVO-j59FA=/?invite_link_id=79255309464
-<img width="258" alt="War Game WireFrame" src="https://user-images.githubusercontent.com/101551729/162010447-9eb40c61-665f-4604-a59c-74b4a7a3de75.PNG">
 
